@@ -137,11 +137,6 @@ def list_contacts():
     email VARCHAR(50) NOT NULL);
     ''')
 
-    #cursor.execute("""
-    #INSERT INTO user(fullname,phonenumber,email)
-    #VALUES("Isyaku Murtala","08064732356","muriisyaku68@gmail.com")
-    #""")
-
     cursor.execute("SELECT * FROM user")
     rows = cursor.fetchall()
     for row in rows:
